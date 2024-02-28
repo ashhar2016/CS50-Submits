@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	    <title>Search</title>
+	</head>
+	
+	<body>
+	    <style>
+		    .right a{
+			   float: right;
+			   padding: 10px 12px;
+			   color: black;
+			   text-decoration: none;
+			}
+			.right a:hover{
+			   color: black;
+			   text-decoration: underline;
+			}
+		    .image{
+			   display: flex;
+			   margin-left: 400px;
+			   margin-right: 400px;
+			   justify-content: center;
+			   align-items: center;
+			   min-height: 35vh;
+		    }
+		    .form-container{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               min-height: 5vh;
+            }
+			
+			#searchbox{
+			   border-radius: 25px;
+			   border: 0.1px #D0D0D0 solid;
+			   padding: 20px;
+			   width: 500px;
+			   height: 8px		
+			}
+			#searchbox:focus{
+			   outline: none;
+			   box-shadow: -1px -1px 1px #D3D3D3, 1px 2px 1px #D3D3D3;
+			}
+			#searchbox:hover{
+			   outline: none;
+			   box-shadow: -1px -1px 1px #D3D3D3, 1.5px 2px 1px #D3D3D3;
+			}
+			
+			#ip2{
+			   background: #F8F8F8;
+			   padding: 6px;
+			   border: none;
+			   width: 120px;
+			   height: 40px;
+			   margin-left: 140px;
+			   font-size: 12;
+			}
+			#ip2:hover{
+			   cursor: pointer;
+			   border-radius: 4px;
+			   border: 1px #DCDCDC solid;
+			}
+			#ip3{
+			   background: #F8F8F8;
+			   padding: 7px;
+			   border: none;
+			   width: 130px;
+			   height: 40px;
+			   margin-right: 60px;
+			   font-size: 12
+			}
+			#ip3:hover{
+			   cursor: pointer;
+			   border-radius: 4px;
+			   border: 1px #DCDCDC solid;
+			}
+		</style>
+		<div class="right">
+		   <a href="advanced-search.html">Advanced</a>
+		   <a href="image-search.html">Images</a>
+		</div>   
+		<div class="image">
+		   <img src="google-logo-9834.png" width="350">
+		</div>
+	    <div class="form-container">
+		    <form action="https://www.google.com/search">
+		        <input type="text" id="searchbox" name="q"><br><br>
+		        <input type="submit" id="ip2" value="Google Search">
+				<input type="submit" id="ip3" formaction="https://www.google.com/search" name="btnI" value="I'm Feeling Lucky">
+		    </form>
+		</div>
+	</body>
+</html>
